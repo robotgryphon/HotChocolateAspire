@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAspireHost>true</IsAspireHost>
+        <UserSecretsId>afefedb8-02a3-413f-8c53-d088f34b3c93</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.1" />
+        <PackageReference Include="HotChocolate.Fusion.Aspire" Version="14.0.0-rc.2" />
+        <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AuthorsService\AuthorsService.csproj" />
+      <ProjectReference Include="..\BooksService\BooksService.csproj" />
+      <ProjectReference Include="..\Gateway\Gateway.csproj" />
+    </ItemGroup>
+
+</Project>

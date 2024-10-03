@@ -10,6 +10,9 @@ namespace BookService.Types;
 [QueryType]
 public static class BookQueries
 {
+    [Internal, Lookup]
+    public static Author GetAuthor([Is("id")] string id) => new(id);
+
     [Lookup]
     [GraphQLName("book")]
     public static IReadOnlyCollection<Book> GetBooksByTitle([Is("id")] Guid id) => FakeBooks.BooksByID.Values
@@ -25,6 +28,5 @@ public static class BookQueries
     [Lookup]
     [GraphQLName("booksByAuthorID")]
     public static async Task<IReadOnlyCollection<Book>?> GetBooksByAuthor([Is("author { id }")] string authorID,
-        ISelection selection,
-        BooksByAuthorDataLoader dl) => await dl.Select(selection).LoadAsync(authorID);
+        BooksByAuthorDataLoader dl) => await dl.LoadAsync(authorID);
 }

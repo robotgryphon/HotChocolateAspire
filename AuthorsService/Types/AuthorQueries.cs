@@ -15,5 +15,3 @@ public static class AuthorQueries
     [Lookup, Internal]
     public static Book GetBookById([Is("id")] Guid id) => new(id);
 }
-
-public record Book([property: GraphQLName("id")] Guid ID);

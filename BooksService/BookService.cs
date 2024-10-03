@@ -4,7 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
-builder.AddGraphQL().AddTypes();
+builder.AddGraphQL()
+    // .UseInstrumentation()
+    .AddTypes();
 
 var app = builder.Build();
 

@@ -1,8 +1,17 @@
-namespace AuthorsService.Types;
+using HotChocolate.Fusion.SourceSchema.Types;
+
+namespace AuthorService.Types;
 
 public class Author(string id, string name)
 {
-	public string ID { get; init; } = id;
+    [GraphQLName("id")]
+    public string ID { get; set; } = id;
 
-	public string Name { get; init; } = name;
+
+    [GraphQLName("name")]
+    public string Name { get; set; } = name;
+
+    [Internal]
+    [GraphQLName("books")]
+    internal ICollection<Book> Books { get; init; }
 }

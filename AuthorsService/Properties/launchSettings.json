@@ -1,14 +1,22 @@
 {
   "profiles": {
-    "http": {
+    "https": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "launchUrl": "http://localhost:5096/graphql",
-      "applicationUrl": "http://localhost:5096;https://localhost:43302",
+      "launchBrowser": false,
+      "launchUrl": "http://localhost:5100/graphql",
+      "applicationUrl": "https://localhost:5101;http://localhost:5100",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:5100",
+      "sslPort": 5101
     }
   }
 }

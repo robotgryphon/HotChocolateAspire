@@ -1,14 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotChocolateAspire", "HotChocolateAspire\HotChocolateAspire.csproj", "{1F164EAB-C199-4FC4-8416-AA6C4C932FD2}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotChocolateAspire", "HotChocolateAspire\HotChocolateAspire.csproj", "{1F164EAB-C199-4FC4-8416-AA6C4C932FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{CB26A0C2-9F7B-4770-BDBE-B2F2B6C1B120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{CB26A0C2-9F7B-4770-BDBE-B2F2B6C1B120}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksService", "BooksService\BooksService.csproj", "{C0D6947A-065B-4F0A-B2F9-77D5AC9C1C9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceDefaults", "ServiceDefaults\ServiceDefaults.csproj", "{9BAB6D84-1EE2-4EFD-8208-2FB2F9FC336A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsService", "AuthorsService\AuthorsService.csproj", "{C5EA7066-221D-45FA-838C-02BCFB8F3000}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorsService", "AuthorsService\AuthorsService.csproj", "{EC386C9F-8B01-4BB2-A1A6-5828D15669F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "ServiceDefaults\ServiceDefaults.csproj", "{9BAB6D84-1EE2-4EFD-8208-2FB2F9FC336A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksService", "BooksService\BooksService.csproj", "{CF9906A2-D97D-407C-9586-3E4EBF01B221}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,17 +27,20 @@ Global
 		{CB26A0C2-9F7B-4770-BDBE-B2F2B6C1B120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB26A0C2-9F7B-4770-BDBE-B2F2B6C1B120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB26A0C2-9F7B-4770-BDBE-B2F2B6C1B120}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0D6947A-065B-4F0A-B2F9-77D5AC9C1C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0D6947A-065B-4F0A-B2F9-77D5AC9C1C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0D6947A-065B-4F0A-B2F9-77D5AC9C1C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0D6947A-065B-4F0A-B2F9-77D5AC9C1C9B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5EA7066-221D-45FA-838C-02BCFB8F3000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5EA7066-221D-45FA-838C-02BCFB8F3000}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5EA7066-221D-45FA-838C-02BCFB8F3000}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5EA7066-221D-45FA-838C-02BCFB8F3000}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BAB6D84-1EE2-4EFD-8208-2FB2F9FC336A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9BAB6D84-1EE2-4EFD-8208-2FB2F9FC336A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BAB6D84-1EE2-4EFD-8208-2FB2F9FC336A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BAB6D84-1EE2-4EFD-8208-2FB2F9FC336A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC386C9F-8B01-4BB2-A1A6-5828D15669F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC386C9F-8B01-4BB2-A1A6-5828D15669F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC386C9F-8B01-4BB2-A1A6-5828D15669F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC386C9F-8B01-4BB2-A1A6-5828D15669F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF9906A2-D97D-407C-9586-3E4EBF01B221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9906A2-D97D-407C-9586-3E4EBF01B221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9906A2-D97D-407C-9586-3E4EBF01B221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9906A2-D97D-407C-9586-3E4EBF01B221}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

@@ -1,7 +1,7 @@
-namespace BooksService.Types;
+namespace BookService.Types;
 
-public class Book(string Title, Author Author)
+public record Book([property: GraphQLName("id")] Guid ID, string Title, Author Author)
 {
-	public string Title { get; init; } = Title;
-	public Author Author { get; init; } = Author;
+    public Book() : this(Guid.Empty, null, null) { }
+
 }

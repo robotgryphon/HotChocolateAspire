@@ -1,5 +1,11 @@
 {
   "profiles": {
+    "aspire": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "hotReloadEnabled": true
+    },
     "https": {
       "commandName": "Project",
       "dotnetRunMessages": true,

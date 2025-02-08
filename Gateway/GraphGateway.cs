@@ -9,14 +9,20 @@ builder.Services
         c.Headers.Add("Authorization");
     });
 
-builder.Services
-    .AddHttpClient("Fusion")
+builder.Services.ConfigureHttpClientDefaults(static client =>
+{
+    client.AddServiceDiscovery();
+});
+
+builder.Services.AddServiceDiscovery();
+
+builder.Services.AddHttpClient("Fusion")
     .AddHeaderPropagation();
 
 builder.Services
     .AddFusionGatewayServer()
-    .ConfigureFromFile("./gateway.fgp", true);
-    // .AddServiceDiscoveryRewriter()
+    .ConfigureFromFile("./gateway.fgp", true)
+    .AddServiceDiscoveryRewriter();
 
 var app = builder.Build();
 

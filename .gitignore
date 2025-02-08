@@ -9,3 +9,5 @@ Gateway/gateway.fgp
 
 .vs/
 .vscode/
+
+*.user
